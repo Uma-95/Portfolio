@@ -1,6 +1,6 @@
-# portfolio
+# Portfolio
 
-Here is My portfolio
+Here is my Portfolio
 
 Tech stack used -
 1) HTML
