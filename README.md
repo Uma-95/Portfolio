@@ -5,7 +5,5 @@ Here is My portfolio
 Tech stack used -
 1) HTML
 2) JavaScript
-3) Css
+3) CSS
 
-here all about my details and work.
-# Portfolio
