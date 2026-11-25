@@ -1,208 +1,554 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Product · Uma Lamba</title>
-<meta name="description" content="Uma Lamba: product generalist across edtech, creator and AI startups.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Uma Lamba">
-<meta property="og:title" content="Product · Uma Lamba">
-<meta property="og:description" content="Uma Lamba: product generalist across edtech, creator and AI startups.">
-<meta property="og:image" content="https://portfolio-uma-lamba.vercel.app/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://portfolio-uma-lamba.vercel.app/og-image.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="icon" href="./assets/img/h1.png" /> -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Uma Lamba</title>
 </head>
+
 <body>
-<div class="wrap">
-  <nav aria-label="Main">
-    <a class="name" href="index.html">Uma Lamba</a>
-    <ul>
-      <li><a href="about-me.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="pm-diaries.html">PM Diaries</a></li>
-      <li><a href="Uma_Lamba_Resume.pdf">Resume</a></li>
-    </ul>
-  </nav>
-  <header class="hero hero-compact" id="top">
-    <div class="keys" aria-label="Ctrl plus Alt plus Product">
-      <span class="key">Ctrl</span><span class="plus">+</span><span class="key">Alt</span><span class="plus">+</span><span class="key accent">Product</span>
-    </div>
-    <h1 class="h1-story">Hi, I'm Uma. I figure out what <em>users</em> need, then help build it, launch it and grow it.</h1>
-    <p class="lede">Product generalist · edtech, creator and AI startups · Bengaluru</p>
-    <div class="ctas">
-      <a class="btn primary" href="Uma_Lamba_Resume.pdf">View resume</a>
-      <a class="btn teal" href="https://www.linkedin.com/in/umalamba/">LinkedIn</a>
-      <a class="btn pink" href="mailto:uma.lamba59@gmail.com">Email me</a>
-    </div>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <!-- &#60;&#62; -->
+        <!-- <a href="#home" class="nav-logo"><img src="./assets/img/h.png" height="70px" alt="H" /></a> -->
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link home active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link contact">Contact</a>
+          </li>
+          <li class="nav-item">
+          <a href = "#" onclick="myFunction()"> <img src="./assets/img/sumoon.png" alt="" height="20px" width="20px" style="background-color: transparent;"> </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
   </header>
 
-  <section aria-labelledby="about-h">
-    <a class="about-tile" href="about-me.html">
-      <h2 id="about-h">👋 Who I am</h2>
-      <p>It all started with college fests: pulling off events, managing club juniors, and making sure nothing fell apart five minutes before go-time. That behind-the-scenes chaos turned into a curiosity I never got over: why do some things just <em>work</em>?</p>
-      <span class="tile-more">Read my full story &amp; timeline →</span>
-    </a>
-  </section>
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid section" id="home">
+      <div class="home-data">
+        <h2 class="home-title">
+          Hi 👋,<br />I'm <span class="home-title-color">Uma Lamba</span><br />
+         <span id="jobTitle" >Web Developer</span> 
+        </h2>
+            
+        <a href="https://drive.google.com/file/d/1fdx3B_Y44pE9jgcD8sFG0n2FymzeRrub/view?usp=sharing" target="_blank"
+          class="button">Resume </a>
 
-  <section aria-labelledby="do-h">
-    <h2 id="do-h">🎯 What I do</h2>
-    <div class="tiles four">
-      <div class="do-tile">
-        <span class="tile-emoji">🔍</span>
-        <span class="tile-title">Understand users</span>
-        <span class="tile-text">Interviews, feedback loops, personas and market research.</span>
-        <div class="proof"><span>See it in:</span><a href="projects/graph-programming-camp.html">Graph Camp</a><a href="projects/creator-circle-growth.html">Creator Circle</a></div>
       </div>
-      <div class="do-tile">
-        <span class="tile-emoji">🛠️</span>
-        <span class="tile-title">Shape and ship products</span>
-        <span class="tile-text">PRDs, prototypes and launches, from the first doc to the real thing.</span>
-        <div class="proof"><span>See it in:</span><a href="projects/graph-programming-camp.html">Graph Camp</a><a href="projects/party-shuffle.html">Party Shuffle</a><a href="https://draft-checker.vercel.app/">Draft Check</a></div>
+
+      <div class="home-social">
+        <a href="https://www.linkedin.com/in/umalamba/" target="_blank" class="home-social-icon"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Uma-95" target="_blank" class="home-social-icon"><i
+            class="bx bxl-github"></i></a>
       </div>
-      <div class="do-tile">
-        <span class="tile-emoji">📈</span>
-        <span class="tile-title">Take them to market</span>
-        <span class="tile-text">Content, SEO and AI search, launch distribution and outreach.</span>
-        <div class="proof"><span>See it in:</span><a href="experience.html#future-agi">Experience</a><a href="projects/creator-circle-growth.html">Creator Circle</a></div>
+
+      <div class="home-img">
+        <img src="assets/img/profile.gif" alt=""  />
       </div>
-      <div class="do-tile">
-        <span class="tile-emoji">📊</span>
-        <span class="tile-title">Measure what matters</span>
-        <span class="tile-text">Funnel KPIs, dashboards, A/B tests and AI evals.</span>
-        <div class="proof"><span>See it in:</span><a href="experience.html#future-agi">Experience</a><a href="projects/randosando-analytics.html">RandoSando analytics</a></div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about-container bd-grid">
+        <div class="about-img">
+          <img src="assets/img/umz.jpeg" alt="" />
+        </div>
+
+        <div style="text-align: center">
+          <h2 class="about-subtitle">I'm Uma Lamba</h2>
+          <p class="about-text">
+            Quick learner and an aspiring full-stack web developer with core
+            knowledge of MERN stack technology. Looking forward to applying
+            and enhancing my skills and knowledge as a developer.
+          </p>
+          <br />
+          
+          <p>
+            Drop a mail uma.lamba59@gmail.com
+            <i style="color: #98D7C2; font-size: 1.2rem; cursor: pointer" class="bx bx-copy" id="copy"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!---========Education ======--->
+    <section class="education section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-container bd-grid">
+    
+        <!-- <div class="education-data">
+          <div class="education-names">
+            <i class="bx bxl-html5 skills-icon"></i> 
+            <span class="education-name">High School</span> 
+            <p class="education-platform ">Sri Gayatri Educational Institutions</p>
+            <p class="education-duration ">June 2017 - May 2019</p>
+          </div>
+        </div>
+        </div>
+      <div class="education-container bd-grid"> -->
+    
+    <div class="education-data">
+      <div class="education-names">
+        <!-- <i class="bx bxl-html5 skills-icon"></i> -->
+        <span class="education-name">B.Tech(ECE)</span>
+        <p class="education-platform ">Indian Institute of Information Technology Nagpur</p>
+        <p class="education-duration "> 2020 - 2024 </p>
+
       </div>
     </div>
-  </section>
+    </div>
 
-  <section aria-labelledby="exp-h">
-    <h2 id="exp-h">💼 What I've done</h2>
-    <div class="exp-list">
-      <a class="exp-row" href="experience.html#future-agi">
-        <span class="exp-when">Jul 2025 – Present</span>
-        <span class="exp-role">Product & Growth</span>
-        <span class="exp-co">Future AGI</span>
-        <span class="tile-arrow">→</span>
-      </a>
-      <a class="exp-row" href="experience.html#creator-circle">
-        <span class="exp-when">May 2025 – Jul 2025</span>
-        <span class="exp-role">Product Intern · Growth &amp; GTM</span>
-        <span class="exp-co">Creator Circle</span>
-        <span class="tile-arrow">→</span>
-      </a>
-      <a class="exp-row" href="experience.html#algouniversity">
-        <span class="exp-when">Jul 2023 – Jan 2024</span>
-        <span class="exp-role">Associate Product Manager Intern</span>
-        <span class="exp-co">AlgoUniversity (YC S21)</span>
-        <span class="tile-arrow">→</span>
-      </a>
-    </div>
-    <h3 class="subhead" id="projects">Things I've built</h3>
-    <div class="projects two">
-      <article class="card">
-        
-        <span class="tag">Live tool · AI</span>
-        <h3>Draft Check</h3>
-        <p>SEO tools overwhelm non-specialist writers. Draft Check turns the checklist behind our team&#x27;s 22x organic growth into a pre-publish checker: 7 rule checks plus 6 Gemini-judged checks, validated against a hand-labeled golden set.</p>
-        <p class="impact">Shows the top 5 fixes in seconds.</p>
-        <div class="links"><a href="https://draft-checker.vercel.app/" class="stretch">Try it →</a><a href="https://github.com/Uma-95/draft-checker">GitHub</a></div>
-      </article>
-      <article class="card">
-        <div class="card-cover"><img src="assets/covers/party-shuffle.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
-        <span class="tag">0 → 1 · Tested with users</span>
-        <h3>Party Shuffle</h3>
-        <p>A card party game built to break the ice among mutual friends, with a viral loop: challenge, capture, share, invite, replay.</p>
-        <p class="impact">Tested at 4 gatherings (10–15 people), iterating after each.</p>
-        <div class="links"><a href="projects/party-shuffle.html" class="stretch">Case study →</a><a href="https://www.figma.com/proto/X7lKQXrqHSpDpV7R3Lat2i/Party-Shuffle?node-id=49-2&p=f&t=h9MtiMxbV2lTc9sh-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2">Figma prototype</a></div>
-      </article>
-      <article class="card">
-        <div class="card-cover"><img src="assets/covers/graph-programming-camp.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
-        <span class="tag">PRD · Funnel</span>
-        <h3>Graph Programming Camp</h3>
-        <p>A free DSA bootcamp for IIT, NIT and IIIT students that doubled as AlgoUniversity&#x27;s lead funnel, from campus onboarding to sales conversion.</p>
-        <p class="impact">3,000+ students, 85% attendance, a paid 40-student cohort.</p>
-        <div class="links"><a href="projects/graph-programming-camp.html" class="stretch">Case study →</a><a href="https://docs.google.com/document/d/1fqEPegmQhr5dnaPFIWU4HqWxkjbKZe1pcLa4fFYoE8c/edit?tab=t.0">PRD</a></div>
-      </article>
-      <article class="card">
-        <div class="card-cover"><img src="assets/covers/vibe-compass.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>
-        <span class="tag">0 → 1 · Ongoing</span>
-        <h3>The Vibe Compass</h3>
-        <p>A self-initiated digital wellness brand focused on emotional clarity, self-reflection, and mindset glow-ups for Gen Z. Currently building the foundation through audience research, content planning, and platform setup (YouTube and Pinterest) while testing zero-cost growth strategies.</p>
-        
-        <div class="links"><a href="projects/vibe-compass.html" class="stretch">Read more →</a></div>
-      </article>
-    </div>
-  </section>
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Tools and Technologies</h2>
 
-  <section aria-labelledby="how-h">
-    <h2 id="how-h">🤝 How I work</h2>
-    <p class="section-lede">What you get if we work together.</p>
-    <div class="tiles four">
-      <div class="how-card"><span class="tile-emoji">👂</span><span class="tile-title">I start with users, not opinions.</span><span class="tile-text">Every project begins with talking to the people it&#x27;s for.</span></div>
-      <div class="how-card"><span class="tile-emoji">🧩</span><span class="tile-title">I own the messy middle.</span><span class="tile-text">From the doc to the launch to the numbers.</span></div>
-      <div class="how-card"><span class="tile-emoji">🗣️</span><span class="tile-title">I speak everyone&#x27;s language.</span><span class="tile-text">I&#x27;ve worn the writer, marketer, researcher and product hats, so I work easily with engineers, designers and sales.</span></div>
-      <div class="how-card"><span class="tile-emoji">🔁</span><span class="tile-title">I ship small, measure, and iterate.</span><span class="tile-text">Small bets, real data, quick learning.</span></div>
-    </div>
-  </section>
+      <div class="skills-container bd-grid">
+        <div>
+          <!-- <h2 class="skills-subtitle">Front-end Skills</h2> -->
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-html5 skills-icon"></i>
+              <span class="skills-name">HTML</span>
+            </div>
+            <!-- <div class="skills-bar skills-html"></div> 
+             <div>
+                <span class="skills-percentage">75%</span>
+              </div>  -->
+          </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-css3 skills-icon"></i>
+              <span class="skills-name">CSS</span>
+            </div>
+             <!-- <div class="skills-bar skills-css"></div>  -->
+            <!-- <div>
+                <span class="skills-percentage">70%</span>
+              </div>  -->
+          </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-javascript skills-icon"></i>
+              <span class="skills-name">JavaScript</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
 
-  <section aria-labelledby="explore-h">
-    <h2 id="explore-h">🧭 Explore</h2>
-    <div class="tiles">
-      <a class="tile" href="projects.html">
-        <span class="tile-emoji">📚</span>
-        <span class="tile-title">All projects &amp; case studies</span>
-        <span class="tile-text">Internship deep dives, teardowns, growth strategies and product analytics.</span>
-        <span class="tile-meta">13 projects</span>
-        <span class="tile-arrow">→</span>
-      </a>
-      <a class="tile" href="skills.html">
-        <span class="tile-emoji">🧰</span>
-        <span class="tile-title">Skills</span>
-        <span class="tile-text">Product, research, growth, data and the tools I use every day.</span>
-        
-        <span class="tile-arrow">→</span>
-      </a>
-      <a class="tile" href="education.html">
-        <span class="tile-emoji">🎓</span>
-        <span class="tile-title">Education &amp; certifications</span>
-        <span class="tile-text">B.Tech from IIIT Nagpur, open source, and product courses.</span>
-        
-        <span class="tile-arrow">→</span>
-      </a>
-      <a class="tile" href="pm-diaries.html">
-        <span class="tile-emoji">📝</span>
-        <span class="tile-title">PM Diaries</span>
-        <span class="tile-text">Some wins. Some flops. All lessons.</span>
-        
-        <span class="tile-arrow">→</span>
-      </a>
-      <a class="tile" href="beyond-work.html">
-        <span class="tile-emoji">🌸</span>
-        <span class="tile-title">The Not-So-Professional Section</span>
-        <span class="tile-text">2 AM ideas, mini obsessions and dream products.</span>
-        
-        <span class="tile-arrow">→</span>
-      </a>
-    </div>
-  </section>
+          </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-react skills-icon"></i>
+              <span class="skills-name">React</span>
+            </div>
+            <!-- <div class="skills-bar skills-react"></div> -->
+            <div>
+                <!-- <span class="skills-percentage">50%</span> -->
+              </div>
+          </div>
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-figma skills-icon"></i>
+              <span class="skills-name">Figma</span>
+            </div>
+            <!-- <div class="skills-bar skills-redux"></div>  -->
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">50%</span> -->
+              </div> 
 
-  <section class="contact" id="contact" aria-labelledby="contact-h">
-    <h2 id="contact-h">📩 Let's connect</h2>
-    <p>Always happy to talk about funnels, evals, or a product you love.</p>
-    <div class="ctas">
-      <a class="btn primary" href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a>
-      <a class="btn teal" href="https://www.linkedin.com/in/umalamba/">LinkedIn</a>
-      <a class="btn pink" href="https://github.com/Uma-95">GitHub</a>
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-names">
+              <img class="skills-icon"  src="./assets/img/sql.png" alt="" />
+              <span class="skills-name">SQL</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- <h2 class="skills-subtitle">Back-end Skills</h2> -->
+          <div class="skills-data">
+            <div class="skills-names">
+              <img class="skills-icon" src="./assets/img/express.png" alt="" />
+              <span class="skills-name">Express.js</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-names">
+              <i class="bx bxl-nodejs skills-icon"></i>
+              <span class="skills-name">Node.js</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div> -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-names">
+              <img class="skills-icon" src="./assets/img/mongodb.png" alt="" />
+              <span class="skills-name">MongoDB</span>
+            </div>
+            <!-- <div class="skills-bar skills-css"></div>  -->
+            <div>
+                <!-- <span class="skills-percentage">70%</span> -->
+              </div> 
+          </div>
+          <div>
+             <!-- <h2 class="skills-subtitle">TOOLS</h2> --> 
+             <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="./assets/img/github.svg" alt="" />
+                <span class="skills-name">Github</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="./assets/img/git.png" alt="" />
+                <span class="skills-name">Git</span>
+              </div>
+
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="./assets/img/dsa.png" alt="" />
+                <span class="skills-name">Data Structures and Algorithms</span>
+              </div>
+
+            </div> 
+
+          </div>
+        </div>
+    </section>
+
+
+    <!--===== Projects =====-->
+    <section class="projects section" id="projects">
+      <h2 class="section-title">Projects</h2>
+
+
+      <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+      <div class="project-container">
+        <div class="project-img">
+          <img src="assets/img/1.PNG" alt="cult.fit" />
+          <p class="project-title">CodeGenix</p>
+          <p class="project-subtitle">
+            <!-- A web application for student to enroll into desired courses and view timetable. -->
+            <!-- <br />
+      
+            <br /> -->
+            A real-time code compiler, allowing users to seamlessly write,
+            compile, and execute code while receiving instant feedback
+            <br />
+            <br />HTML | CSS | JavaScript | React.js | Node.js | Postman
+
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/CodeGenix" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/9.PNG" alt="Reddit.com" />
+          <p class="project-title">Filmflix</p>
+          <p class="project-subtitle">
+            This is a simple React application that allows you to search for movies using the Open Movie Database (OMDb) API. You can enter a movie title in the search bar, and the app will display a list of matching movies along with their details.
+
+              <br />
+            <br />
+            Features:
+
+            Search for movies by title
+            View movie details such as title, release year, poster, and type (e.g., movie or series)
+            Responsive design for a seamless experience on desktop and mobile devices
+            
+            <br />
+            <br /> HTML | CSS | Javascript | React | OMDB API
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/Filmflix" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+            <!-- <a href="https://uma-95.github.io/Golf-website/" target="_blank" class="small-btn button">
+              Live
+               <i class="bx bx-link-external"></i> 
+            </a> -->
+          </div>
+        </div>
+
+
+        <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/2.PNG" alt="Reddit.com" />
+          <p class="project-title">GREENGOLF HUB</p>
+          <p class="project-subtitle">
+            A responsive golf website ensuring a seamless and user-friendly interface through a combination of
+            front-end technologies.
+              <br />
+            <!-- <br /> -->
+           
+            <!-- <br /> -->
+            <br /> HTML | CSS | Javascript 
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/Golf-website" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://uma-95.github.io/Golf-website/" target="_blank" class="small-btn button">
+              Live
+              <!-- <i class="bx bx-link-external"></i> -->
+            </a>
+          </div>
+        </div>
+
+
+          <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/3.PNG" alt="Reddit.com" />
+          <p class="project-title">WEATHERCHECK</p>
+          <p class="project-subtitle">
+            A responsive and interactive web application using RestAPI which
+            tracks and reports live weather of any city of the world.
+            <br />
+            <br />
+            Implemented Frontend using HTML, CSS, and JavaScript an
+            openweathermap API to fetch the weather data. 
+            <br />
+            <br />  HTML | CSS | Javascript
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/Weather-App" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://uma-95.github.io/Weather-App/" target="_blank" class="small-btn button">
+              Live
+              <!-- <i class="bx bx-link-external"></i> -->
+            </a>
+          </div>
+        </div>
+
+
+        <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/4.PNG" alt="cult.fit" />
+          <p class="project-title">Char-Count</p>
+          <p class="project-subtitle">
+            A real time character counter, when a paragraph or some text is entered, it shows the number of characters added and the number of characters that can be added so as not to exceed the maximum character limit.
+            <br />
+            <!-- <br /> -->
+            <!-- It is Individual Project build by Me. -->
+            . <br />
+            <br />HTML | CSS | Javascript
+          </p>
+        
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/Real-time-character-counter-" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://uma-95.github.io/Real-time-character-counter-/" target="_blank" class="small-btn button">
+              Live
+              <!-- <i class="bx bx-link-external"></i> -->
+            </a>
+
+          </div>
+        </div>
+        
+
+
+        <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/5.PNG" alt="cult.fit" />
+          <p class="project-title">My Portfolio website</p>
+          <p class="project-subtitle">
+            My portfolio web application consisteing of various projects I made while learning web dev.
+            <br />
+            <br />
+            <!-- It is Individual Project build by Me. -->
+            <!-- . <br /> -->
+            <br />HTML | CSS | Javascript
+          </p>
+          <div class="project-btns">
+            <a href="" target="_blank" class="small-btn button">
+
+              <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="" target="_blank" class="small-btn button">
+              Live
+              <!-- <i class="bx bx-link-external"></i> -->
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/6.PNG" alt="Swiggy.com" />
+          <p class="project-title">Wadrobe Wonders</p>
+          <p class="project-subtitle">
+           A simple homepage website using basic HTML and CSS.
+            <br />
+            <br />
+          
+            <!-- <br /> -->
+            <!-- <br /> -->
+            HTML | CSS 
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/OCTANET" target="_blank"
+              class="small-btn button">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="" target="_blank" class="small-btn button">
+              Live
+              <!-- <i class="bx bx-link-external"></i> -->
+            </a>
+          </div>
+        </div>
+
+
+        <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/8.PNG" alt="Swiggy.com" />
+          <p class="project-title">SkyHigh Tours and Travels</p>
+          <p class="project-subtitle">
+            A sleek website offering seamless user experience with HTML, CSS, and JavaScript DOM. 
+            <br />
+          
+            <br />
+            Features include signup/login forms, secure authentication with cookies, and engaging CSS animations.
+            <br />
+
+            <br />
+            HTML | CSS | Javascript | DOM 
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/OCTANET" target="_blank"
+              class="small-btn button">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="" target="_blank" class="small-btn button">
+              Live
+              <!-- <i class="bx bx-link-external"></i> -->
+            </a>
+          </div>
+        </div>
+
+
+        <!-- projecttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+        <div class="project-img">
+          <img src="assets/img/7.PNG" alt="Swiggy.com" />
+          <p class="project-title">Bank Management System</p>
+          <p class="project-subtitle">
+            Implemented mini Banking service system in Java utilizing OOPS concepts: inheritance, polymorphism, encapsulation, and abstraction.
+            <br />
+            <br />
+            Features include creating new accounts, depositing, and withdrawing money. 
+            <br />
+            <br />
+           
+            Java | OOPS concepts
+          </p>
+          <div class="project-btns">
+            <a href="https://github.com/Uma-95/OCTANET" target="_blank"
+              class="small-btn button">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="" target="_blank" class="small-btn button">
+              Live
+              <!-- <i class="bx bx-link-external"></i> -->
+            </a>
+          </div>
+        </div>
+      
+
+
+
+
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER + CONTACT=====-->
+  
+  <footer class="footer section" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="footer-title">Uma Lamba</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/umalamba/" target="_blank" class="footer-icon"><i
+          class="bx bxl-linkedin">
+          <br />
+          LinkedIn</i></a>
+      <a href="mailto:uma.lamba59@gmail.com" target="_blank" class="footer-icon"><i class="bx bx-mail-send">
+          <br />
+          E-mail</i></a>
+      <a href="tel:+91 8639553419" target="_blank" class="footer-icon"><i class="bx bx-phone">
+          <br />
+          Phone</i></a>
+      <a href="https://github.com/Uma-95" target="_blank" class="footer-icon"><i
+            class="bx bxl-github">
+          <br />
+          GitHub
+          </i></a>
     </div>
-  </section>
-  <footer>© 2026 Uma Lamba · <a href="mailto:uma.lamba59@gmail.com">uma.lamba59@gmail.com</a> · <a href="https://www.linkedin.com/in/umalamba/">LinkedIn</a></footer>
-</div>
+    <p>&#169; 2023 copyright all right reserved</p>
+  </footer>
+
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
